@@ -31,7 +31,3 @@ build:
   ci:
     - python --version
     - firefox --version
-integrations:
-  hub:
-    - integrationName: docker 
-      type: docker
