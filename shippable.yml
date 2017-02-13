@@ -11,8 +11,8 @@ addons:
 
 env:
   global:
-    - IMAGE_NAME=shippabledocker/sample_node_pvt
-    - IMAGE_TAG=latest.40
+    - IMAGE_NAME=library/nginx
+    - IMAGE_TAG="latest"
     - IMAGE_PULL=true
 
 build:
