@@ -10,4 +10,4 @@ python:
 
 build:
   ci:
-    - docker pull drydock/u16pytall:master
+    - docker images
