@@ -10,4 +10,4 @@ python:
 
 build:
   ci:
-    - python --version
+    - docker images
