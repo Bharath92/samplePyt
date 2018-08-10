@@ -5,7 +5,7 @@ language: python
 build:
   ci:
     - cat /etc/resolv.conf
-    - docker ps
+    - docker ps -a
     - docker images
 #integrations:                 
 #  hub:
