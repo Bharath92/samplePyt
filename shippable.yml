@@ -4,7 +4,6 @@ language: python
 
 build:
   ci:
-    - sl
     - cat /etc/resolv.conf
     - docker ps
     - docker images
