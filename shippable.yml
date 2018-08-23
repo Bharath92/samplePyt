@@ -2,8 +2,20 @@
 # Language setting
 language: none
 
-depth: 80
+depth: 1
+
+gitConfig:
+  - http.sslVerify false
+  - core.editor emacs
 
 build:
   ci:
-    - printenv SHIPPABLE_DEPTH
+    - pushd $(shipctl get_resource_state "samplePyt_bitbucket")
+    - git log
+    - popd
+    - pushd $(shipctl get_resource_state "samplePyt_github")
+    - git log
+    - popd
+    - pushd $(shipctl get_resource_state "samplePyt_gitlab")
+    - git log
+    - popd
