@@ -3,10 +3,6 @@ language: none
 runtime:
   nodePool: ci-builder
 
-depth: 3
-
 build:
   ci:
-    - git log
-    - git config -l | grep "http.sslverify=false"
-    - git config -l | grep "core.editor=emacs"
+    - echo hi
