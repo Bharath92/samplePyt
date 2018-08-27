@@ -5,10 +5,6 @@ runtime:
 
 depth: 3
 
-gitConfig:
-  - http.sslVerify false
-  - core.editor emacs
-
 build:
   ci:
     - git log
