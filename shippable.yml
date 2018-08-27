@@ -1,8 +1,5 @@
 language: none
 
-runtime:
-  nodePool: ci-builder
-
 build:
   ci:
     - echo hi
