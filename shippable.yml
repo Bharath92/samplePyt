@@ -10,9 +10,8 @@ gitConfig:
   - http.sslVerify false; echo hi;
   - core.editor emacs; echo lol;
 
-
 build:
   ci:
-    - git log
+    - git log 
     - git config -l | grep "http.sslverify=false"
     - git config -l | grep "core.editor=emacs"
