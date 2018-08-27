@@ -1,5 +1,7 @@
 language: none
-
+depth: 4
+gitConfig:
+  - core.editor vim
 build:
   ci:
     - echo hi
