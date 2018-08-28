@@ -2,6 +2,7 @@ language: none
 depth: 4
 gitConfig:
   - core.editor vim
+  - http.proxy http://proxyuser:proxypwd@proxy.server.com:8080
 build:
   ci:
     - echo hi
