@@ -1,7 +1,5 @@
 language: none
 depth: 4
-runtime:
-  nodePool: default-restricted
 gitConfig:
   - core.editor vim
 build:
