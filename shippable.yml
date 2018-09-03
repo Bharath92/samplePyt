@@ -3,5 +3,7 @@ depth: 4
 gitConfig:
   - core.editor vim
 build:
+  pre_ci:
+    - echo hi
   ci:
     - echo hi
