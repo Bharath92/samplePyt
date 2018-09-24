@@ -8,4 +8,4 @@ build:
   pre_ci:
     - echo hi
   ci:
-    - echo hi
+    - echo hii
