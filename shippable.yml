@@ -4,6 +4,7 @@ runtime:
   nodePool:
     - u14
     - u16
+    - aarch64
 build:
   pre_ci:
     - echo hi
