@@ -1,9 +1,6 @@
 language: none
 depth: 4
-runtime:
-  - nodePool: u14
-  - nodePool: u16
-  - nodePool: aarch64
+runtime: aarch64
 build:
   pre_ci:
     - echo hi
