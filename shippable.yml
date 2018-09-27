@@ -1,6 +1,7 @@
 language: none
 depth: 4
-runtime: aarch64
+runtime:
+  nodePool: aarch64
 build:
   pre_ci:
     - echo hi
