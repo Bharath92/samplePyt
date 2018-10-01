@@ -2,8 +2,12 @@ language: none
 runtime:
   - nodePool: aarch64
   - nodePool: u16
+env:
+  - foo=bar1
+  - foo=bar2
 build:
   pre_ci:
     - echo hi
   ci:
     - echo hii
+    - echo $foo
