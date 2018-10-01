@@ -1,5 +1,4 @@
 language: none
-depth: 4
 runtime:
   nodePool: aarch64
 build:
