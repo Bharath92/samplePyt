@@ -1,6 +1,7 @@
 language: none
 runtime:
-  nodePool: aarch64
+  - nodePool: aarch64
+  - nodePool: u16
 env:
   - foo=bar1
   - foo=bar2
