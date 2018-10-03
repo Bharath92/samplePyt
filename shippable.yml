@@ -1,7 +1,4 @@
-language: none
-runtime:
-  - nodePool: aarch64
-  - nodePool: u16
+language: ruby
 matrix:
   include:
     - rvm: 2.0.0
