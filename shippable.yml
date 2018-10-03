@@ -12,13 +12,10 @@ gemfile:
   - gemfiles/Gemfile.rails-3.0.x
 
 matrix:
-  include:
-    - rvm: 2.0.0
+  exclude:
+    - rvm: 1.9.2
       gemfile: gemfiles/Gemfile.rails-3.0.x
-      env: ISOLATED=false
 
 build:
-  pre_ci:
-    - echo hi
   ci:
     - echo hii
