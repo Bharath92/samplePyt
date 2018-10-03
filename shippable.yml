@@ -16,12 +16,9 @@ matrix:
     - rvm: 2.0.0
       gemfile: gemfiles/Gemfile.rails-3.0.x
       env: ISOLATED=false
-env:
-  - foo=bar1
-  - foo=bar2
+
 build:
   pre_ci:
     - echo hi
   ci:
     - echo hii
-    - echo $foo
