@@ -2,7 +2,6 @@ language: none
 runtime:
   - nodePool: aarch64
   - nodePool: u16
-  - nodePool: lol
 matrix:
   include:
     - rvm: 2.0.0
