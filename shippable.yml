@@ -1,6 +1,7 @@
 language: none
 runtime:
   - nodePool: u16
+  - nodePool: u16
   - nodePool: restricted_aarch64
 matrix:
   include:
