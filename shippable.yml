@@ -1,6 +1,6 @@
 language: none
 runtime:
-  - nodePool: aarch64
+  - nodePool: restricted_aarch64
   - nodePool: u16
 matrix:
   include:
@@ -17,6 +17,7 @@ build:
     image_name: ubuntu
     image_tag: 16.04
     pull: true
+    options: "-e foo=bar"
   ci:
     - echo hii
     - echo $foo
