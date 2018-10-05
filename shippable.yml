@@ -1,7 +1,7 @@
 language: none
-#runtime:
+runtime:
 #  - nodePool: u16
-#  - nodePool: restricted_aarch64
+  nodePool: restricted_aarch64
 matrix:
   include:
     - rvm: 2.0.0
