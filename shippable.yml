@@ -13,6 +13,10 @@ env:
 build:
   pre_ci:
     - echo hi
+  pre_ci_boot:
+    image_name: ubuntu
+    image_tag: 16.04
+    pull: true
   ci:
     - echo hii
     - echo $foo
