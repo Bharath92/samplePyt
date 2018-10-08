@@ -1,6 +1,6 @@
 language: none
-#runtime:
-#  - nodePool: restricted_aarch64
+runtime:
+  - nodePool: restricted_aarch64
 #  - nodePool: u16
   
 matrix:
