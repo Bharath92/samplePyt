@@ -22,8 +22,8 @@ env:
   - foo=bar2
 build:
   pre_ci_boot:
-    image_name: drydock/u16all
-    image_tag: master
+    image_name: ubuntu
+    image_tag: 14.04
     pull: true
   ci:
     - echo hii
