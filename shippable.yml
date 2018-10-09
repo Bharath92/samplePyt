@@ -4,7 +4,7 @@ runtime:
     build:
       ci:
         - echo u16
-  - nodePool: restricted_aarch64
+  - nodePool: aarch64
     build:
       pre_ci_boot:
         image_name: ubuntu
