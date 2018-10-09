@@ -4,6 +4,7 @@ runtime:
   - nodePool: restricted_aarch64
     build:
       pre_ci:
+        -
       ci:
         - echo lol
 
