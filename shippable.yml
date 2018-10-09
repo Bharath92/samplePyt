@@ -1,15 +1,15 @@
 language: none
 runtime:
   - nodePool: u16
-    build:
-      pre_ci:
-        - echo pre_ci
   - nodePool: restricted_aarch64
     build:
+      pre_ci:
       ci:
         - echo lol
 
 build:
+  pre_ci:
+    - echo lol
   pre_ci_boot:
     image_name: ubuntu
     image_tag: 14.04
