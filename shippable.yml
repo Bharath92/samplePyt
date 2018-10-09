@@ -1,15 +1,22 @@
 language: none
 runtime:
-  - nodePool: u16
-    build:
-      ci:
-        - echo u16
   - nodePool: restricted_aarch64
     build:
       pre_ci_boot:
         image_name: ubuntu
         image_tag: 18.04
         pull: true
+  - nodePool: u16
+    build:
+      ci:
+        - echo u16
+
+matrix:
+  include:
+    - rvm: 2.0.0
+      gemfile: gemfiles/Gemfile.rails-3.0.x
+      env: ISOLATED=false
+      nodePool: u16
 
 build:
   pre_ci:
