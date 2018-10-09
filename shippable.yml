@@ -9,7 +9,7 @@ runtime:
       pre_ci_boot:
         image_name: ubuntu
         image_tag: 18.04
-        pull:true
+        pull: true
       ci:
         - echo aarch64
 matrix:
@@ -24,7 +24,7 @@ build:
   pre_ci_boot:
     image_name: drydock/u16all
     image_tag: master
-    pull:true
+    pull: true
   ci:
     - echo hii
     - echo $foo
