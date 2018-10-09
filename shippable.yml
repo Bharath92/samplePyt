@@ -5,6 +5,7 @@ runtime:
     build:
       ci:
         - echo lol
+      pre_ci:
 
 build:
   pre_ci_boot:
