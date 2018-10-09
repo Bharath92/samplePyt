@@ -10,6 +10,9 @@ runtime:
     build:
       ci:
         - echo u16
+env:
+  - foo=bar
+  - foo=mar
 matrix:
   include:
     - rvm: 2.0.0
