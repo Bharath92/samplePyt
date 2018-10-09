@@ -3,7 +3,7 @@ runtime:
   - nodePool: restricted_aarch64
     build:
       pre_ci_boot:
-        image_name: drydock/aarch64_16pytall
+        image_name: drydock/aarch64_16all
         image_tag: master
         pull: true
   - nodePool: u16
