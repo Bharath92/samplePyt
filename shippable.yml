@@ -1,7 +1,13 @@
 language: none
-#runtime:
-#  - nodePool: u16
-#  - nodePool: default-restricted
+runtime:
+  - nodePool: u16
+    build:
+      ci:
+        - echo u16
+  - nodePool: restricted_aarch64
+    build:
+      ci:
+        - echo aarch64
 matrix:
   include:
     - rvm: 2.0.0
