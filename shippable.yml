@@ -3,10 +3,8 @@ runtime:
   - nodePool: u16
   - nodePool: restricted_aarch64
     build:
-      pre_ci_boot:
-        image_name: ubuntu
-        image_tag: 18.04
-        pull: true
+      ci:
+        - echo lol
 
 build:
   pre_ci_boot:
