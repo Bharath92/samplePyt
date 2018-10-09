@@ -1,7 +1,7 @@
 language: none
 runtime:
   - nodePool: u16
-  #- nodePool: restricted_aarch64
+  - nodePool: restricted_aarch64
     build:
       ci:
         - echo lol
