@@ -10,6 +10,12 @@ runtime:
     build:
       ci:
         - echo u16
+matrix:
+  include:
+    - rvm: 2.0.0
+      gemfile: gemfiles/Gemfile.rails-3.0.x
+      env: ISOLATED=false
+      nodePool: u16
 build:
   ci:
     - echo hii
