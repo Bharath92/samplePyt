@@ -13,6 +13,7 @@ build:
     image_name: ubuntu
     image_tag: 14.04
     pull: true
+    options: "-e foo=boo"
   ci:
     - echo hii
     - echo $foo
