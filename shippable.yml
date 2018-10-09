@@ -1,10 +1,10 @@
-language: none
+language: python
 runtime:
   - nodePool: restricted_aarch64
     build:
       pre_ci_boot:
-        image_name: ubuntu
-        image_tag: 18.04
+        image_name: drydock/aarch64_16pytall
+        image_tag: master
         pull: true
   - nodePool: u16
     build:
