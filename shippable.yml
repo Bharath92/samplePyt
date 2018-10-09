@@ -1,9 +1,6 @@
 language: none
 runtime:
   - nodePool: u16
-    build:
-      ci:
-        - echo u16
   - nodePool: aarch64
     build:
       pre_ci_boot:
