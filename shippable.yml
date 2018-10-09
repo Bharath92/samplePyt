@@ -1,11 +1,6 @@
 language: python
 runtime:
-  - nodePool: restricted_aarch64
-    build:
-      pre_ci_boot:
-        image_name: drydock/aarch64_16all
-        image_tag: master
-        pull: true
+  - nodePool: u14
   - nodePool: u16
     build:
       ci:
