@@ -1,21 +1,23 @@
 language: python
 
 python:
-  - 2.7 #.14
   - 3.7 #.0 
 
 runtime:
   - nodePool: restricted_aarch64
+    build:
+      ci:
+        - fadfs
   - nodePool: u16
     build:
       ci:
         - echo u16
 matrix:
-  exclude:
+  allow_failures:
     - python: 3.7
       nodePool: restricted_aarch64
   include:
-    - python: pypy3
+    - python: u16
       nodePool: restricted_aarch64
 build:
   ci:
