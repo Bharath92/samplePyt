@@ -12,8 +12,6 @@ matrix:
       env: ISOLATED=false
       nodePool: u17
 build:
-  pre_ci:
-    -
   ci:
     - echo hii
     - echo $foo
