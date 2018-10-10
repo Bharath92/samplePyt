@@ -10,7 +10,7 @@ matrix:
     - rvm: 2.0.0
       gemfile: gemfiles/Gemfile.rails-3.0.x
       env: ISOLATED=false
-      nodePool: u16
+      nodePool: u17
 build:
   ci:
     - echo hii
