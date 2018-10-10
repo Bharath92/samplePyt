@@ -1,10 +1,10 @@
 language: none
-runtime:
-  - nodePool: u14
-  - nodePool: u16
-    build:
-      ci:
-        - echo u16
+#runtime:
+#  - nodePool: u14
+#  - nodePool: u16
+#    build:
+#      ci:
+#        - echo u16
 matrix:
   include:
     - rvm: 2.0.0
