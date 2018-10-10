@@ -1,23 +1,23 @@
 language: python
 
-#python:
-#  - 3.7 #.0 
+python:
+  - 3.7 #.0 
 env:
   - foo=bar
   - boo=far
-#runtime:
-#  - nodePool: restricted_aarch64
-#    build:
-#      ci:
-#        - fadfs
-#  - nodePool: u16
-#    build:
-#      ci:
-#        - echo u16
+runtime:
+  - nodePool: restricted_aarch64
+    build:
+      ci:
+        - fadfs
+  - nodePool: u16
+    build:
+      ci:
+        - echo u16
 matrix:
-#  allow_failures:
-#    - python: 3.7
-#      nodePool: restricted_aarch64
+  allow_failures:
+    - python: 3.7
+      nodePool: restricted_aarch64
   include:
     - python: 2.7
 build:
