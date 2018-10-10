@@ -2,7 +2,9 @@ language: python
 
 #python:
 #  - 3.7 #.0 
-
+env:
+  - foo=bar
+  - boo=far
 #runtime:
 #  - nodePool: restricted_aarch64
 #    build:
