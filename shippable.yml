@@ -12,7 +12,7 @@ language: python
 #    build:
 #      ci:
 #        - echo u16
-#matrix:
+matrix:
 #  allow_failures:
 #    - python: 3.7
 #      nodePool: restricted_aarch64
