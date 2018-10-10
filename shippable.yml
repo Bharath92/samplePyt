@@ -1,16 +1,18 @@
-language: none
-#runtime:
-#  - nodePool: u14
-#  - nodePool: u16
-#    build:
-#      ci:
-#        - echo u16
+language: python
+
+python:
+  - 2.7 #.14
+  - 3.7 #.0 
+
+runtime:
+  - nodePool: restricted_aarch64
+  - nodePool: u16
+    build:
+      ci:
+        - echo u16
 matrix:
-  include:
-    - rvm: 2.0.0
-      gemfile: gemfiles/Gemfile.rails-3.0.x
-      env: ISOLATED=false
-      nodePool: u17
+  exclude:
+    - python: 3.7
 build:
   ci:
     - echo hii
