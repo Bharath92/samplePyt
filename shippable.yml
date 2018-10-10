@@ -10,8 +10,10 @@ matrix:
     - rvm: 2.0.0
       gemfile: gemfiles/Gemfile.rails-3.0.x
       env: ISOLATED=false
-      nodePool: u17
+      #nodePool: u17
 build:
+  pre_ci:
+    -
   ci:
     - echo hii
     - echo $foo
