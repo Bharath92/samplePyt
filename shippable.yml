@@ -6,10 +6,6 @@ env:
   - foo=bar
   - boo=far
 runtime:
-  - nodePool: restricted_aarch64
-    build:
-      ci:
-        - fadfs
   - nodePool: u16
     build:
       ci:
