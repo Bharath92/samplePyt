@@ -6,10 +6,10 @@ env:
   - foo=bar
   - boo=far
 runtime:
-  - nodePool: u16
+  - nodePool: u14
     build:
       ci:
-        - echo u16
+        - echo u14
 build:
   ci:
     - echo hii
