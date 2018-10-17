@@ -10,12 +10,6 @@ runtime:
     build:
       ci:
         - echo u16
-matrix:
-  allow_failures:
-    - python: 3.7
-      nodePool: restricted_aarch64
-  include:
-    - python: 2.7
 build:
   ci:
     - echo hii
