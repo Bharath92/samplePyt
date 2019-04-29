@@ -18,5 +18,6 @@ def fun2():
 
 t = threading.Thread(target = fun1)
 t.start()
+
 t2 = threading.Thread(target = fun2)
 t2.start()
