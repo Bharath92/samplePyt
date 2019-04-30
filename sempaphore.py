@@ -1,7 +1,6 @@
 import threading
 import time
 sem = threading.Semaphore()
-
 def fun1():
     for num in range(1,20):
         sem.acquire()
