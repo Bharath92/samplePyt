@@ -8,7 +8,7 @@ def fun1():
         print(2)
         sem.release()
         time.sleep(0.25)
-
+ 
 def fun2():
     for num in range(1,20):
         sem.acquire()
